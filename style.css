@@ -1,0 +1,99 @@
+/* Importacao da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilo geral */
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url("files/pageBG.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Cabecalho e Caixa geral */
+header, main {
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+header:hover, main:hover {
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+/* Cabecalho Perfil */
+.cabecalhoPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Foto Perfil */
+.fotoPerfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+/* Nome */
+.nome {
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+/* Descrição */
+.descricao p {
+    margin: 5px 0;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+/* Efeitos de hover */
+.fotoPerfil:hover, .nome:hover, .descricao p:hover {
+    transform: scale(1.1); 
+}
+
+/* Separadores */
+.linha-horizontal {
+    border: none;
+    height: 2px;
+    background-color: rgba(48, 48, 48, 0.31);
+    margin: 10px 0;
+}
+
+/* Titulos */
+h1, h2, h3 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: rgb(0, 0, 0); 
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Rodape */
+footer {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 20px;
+}
+
